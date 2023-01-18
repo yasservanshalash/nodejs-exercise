@@ -1,0 +1,9 @@
+{
+  "name": "nodeJs-assignment",
+  "version": "1.0.0",
+  "description": "node js assignment",
+  "main": "index.js",
+  "repository": "git@github.com:Integrify-Finland/ISA6_NodeJS.git",
+  "author": "Andrea",
+  "license": "MIT"
+}
