@@ -8,9 +8,9 @@
 ## Requirements
 
 1. Create a server in the index.ts file
-2. Install nodemon
-3. After done create a server, add `GET`, `POST`, `DELETE` methods with different path
+2. After done create a server, add `GET`, `POST`, `DELETE` methods with different path
 
 ## Screenshots
 
-1.
+1. get method
+   ![getMethod](./screenshot/get_method.png)

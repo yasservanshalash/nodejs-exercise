@@ -1,9 +1,18 @@
 {
-  "name": "nodeJs-assignment",
+  "name": "nodejs-assignment",
   "version": "1.0.0",
   "description": "node js assignment",
   "main": "index.js",
   "repository": "git@github.com:Integrify-Finland/ISA6_NodeJS.git",
   "author": "Andrea",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "start": "nodemon src/index.ts"
+  }
 }
