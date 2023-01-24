@@ -8,7 +8,11 @@
 ## Requirements
 
 1. Create a server in the index.ts file
-2. After done create a server, add `GET`, `POST`, `DELETE` methods with different path
+2. After done create a server create method and suitable url:
+
+- create `GET` method and return/ response: `user list`,
+- create `POST` method and return/ response: `create new user`,
+- create `DELETE` method and return/ response: `delete user by id`,
 
 ## Screenshots
 
