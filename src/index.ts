@@ -2,7 +2,7 @@ import http, { IncomingMessage, ServerResponse} from "http";
 import url from "url";
 
 const requestListener = (req: any , res: any) => {
-    const id = req.url[7];
+    const id = req.url.slice(7);
     if(req.method === "GET" && req.url === "/") {
         res.write(req.url)
         res.write("getting data...\n")
