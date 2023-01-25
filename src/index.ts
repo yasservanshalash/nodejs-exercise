@@ -1,7 +1,10 @@
 import http, { IncomingMessage, ServerResponse} from "http";
+import url from "url";
 
-const requestListener = (req: IncomingMessage, res: ServerResponse) => {
+const requestListener = (req: any , res: any) => {
+    const id = req.url[7];
     if(req.method === "GET" && req.url === "/") {
+        res.write(req.url)
         res.write("getting data...\n")
         res.end("data recieved")
     } else if(req.method === "POST" && req.url === "/") {
@@ -23,9 +26,13 @@ const requestListener = (req: IncomingMessage, res: ServerResponse) => {
     } else if(req.method === "PATCH" && req.url === "/users") {
         res.write("partially updating user...\n")
         res.end("user partially updated")
+    } else if(req.method === "GET" && req.url === `/users/${id}`){
+        res.write("got user " + id)
+        res.end("")
     }
-    else res.end("GET request ended")
-
+    else {
+        res.end("Request Ended")
+    }
 };
 
 const server = http.createServer(requestListener);
@@ -33,5 +40,6 @@ const port = " 5001";
 
 server.listen(port, () => {
     console.log("server listening on port" + port)
+    
 })
 
